@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'ahadethdetails.dart';
 import 'home.dart';
 import 'myThemeData.dart';
 import 'tabs/ahadeth_tab.dart';
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         SebhaTab.routeName: (context) => SebhaTab(),
         RadioTab.routeName: (context) => RadioTab(),
         SettingsTab.routeName: (context) => SettingsTab(),
-        SuraDetailsScreen.routeName:(context) => SuraDetailsScreen()
+        SuraDetailsScreen.routeName:(context) => SuraDetailsScreen(),
+        AhadethDetails.routeName:(context) => AhadethDetails(),
 
 
       },

@@ -57,13 +57,17 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          verses[index],
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(color: MyThemeData.blackColor),
-                          textAlign: TextAlign.center,
+                        child: Directionality(
+                          textDirection: TextDirection.rtl,
+                          child: Text(
+                            //verses[index],
+                            "${verses[index]}(${index+1})",
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: MyThemeData.blackColor),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       );
                     },
