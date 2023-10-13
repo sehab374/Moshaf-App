@@ -4,6 +4,9 @@ import 'package:islami_v2/myThemeData.dart';
 import '../sura_model.dart';
 import '../suradetails.dart';
 
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+
 class QuranTab extends StatelessWidget {
   static const String routeName = "quran";
 
@@ -134,7 +137,8 @@ class QuranTab extends StatelessWidget {
           color: MyThemeData.primaryColor,
           thickness: 2,
         ),
-        Text("اسم السوره", style: Theme.of(context).textTheme.bodyMedium),
+        Text(AppLocalizations.of(context)!.suraNames
+        , style: Theme.of(context).textTheme.bodyMedium),
         Divider(
           color: MyThemeData.primaryColor,
           thickness: 2,
